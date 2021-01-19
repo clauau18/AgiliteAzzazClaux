@@ -1,4 +1,4 @@
-#Author: your.email@your.domain.com
+#Author: Aurélien Myriam
 #Keywords Summary :
 #Feature: List of scenarios.
 #Scenario: Business rule through list of steps with arguments.
@@ -17,16 +17,12 @@
 ## (Comments)
 #Sample Feature Definition Template
 @tag
-Feature: Personnage
-
-   Scenario: Porter 2 armes
-    Given Le personnage porte 1 arme
-    When Le personnage doit pouvoir porter 2 armes
-    Then Le personnage possède 2 armes
+Feature: Changer armer
+	Je veux que mon héros change darme
+   Scenario: Changer arme
+    Given Le personnage porte une "epee" a 10 degats
+    When Le personnage jette son arme 
+    Then Le personnage possede maintenant une  "lance" a 15 degats
     
-   Scenario: Soigner le héros
-    Given Le personnage veut récupérer des points de vie, ses points de vie sont de 5
-    When Le personnage se soigne  de 5 points de vie
-    Then Les points de vie du personnage remonte à 10
-  
+ 
 

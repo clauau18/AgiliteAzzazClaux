@@ -17,7 +17,7 @@ public class Personnage {
         // initialisation des variables d'instance
         this.pointDeVie = 100;
         this.nom = nom;
-        this.arme = null;
+        this.arme = new Arme("poing", 1);
         
         
     }
@@ -32,7 +32,26 @@ public class Personnage {
         
     }
     
-    
+     public Arme getArme()
+     {
+         return this.arme;
+     }
+     
+     public void setArme(String arme, int degats)
+     {
+         this.arme.setDegats(degats);
+         this.arme.setType(arme);
+     }
+     
+     public void setArme(Arme arme)
+     {
+         this.arme = arme;
+     }
+     
+     public void changerArme(String nouvelleArme, int degats)
+     {
+    	 this.setArme(nouvelleArme, degats);
+     }
     
     public String getNom()
     {

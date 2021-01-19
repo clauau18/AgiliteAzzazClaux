@@ -17,15 +17,15 @@
 ## (Comments)
 #Sample Feature Definition Template
 
-Feature: Arme
+Feature: Ameliorer arme
  
   Je veux que toutes mes armes aient une certaine puissance en fontion de leur nom
 
   
   Scenario: Amélioration
-    Given On a une arme "epee" qui inflige 5 de dégats
-    When je souhaite améliorer mon "epee" de 5 dégats
-    Then Mon "epee" inflige maintenant 10 dégats
+    Given On a une arme "epee" qui inflige 5 de degats
+    When je souhaite ameliorer mon "epee" de 5 degats
+    Then Mon "epee" inflige maintenant 10 degats
     
 
   
