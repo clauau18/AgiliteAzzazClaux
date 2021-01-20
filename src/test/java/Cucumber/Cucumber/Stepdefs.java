@@ -46,9 +46,9 @@ public class StepDefs {
 	    assertTrue(link.getArme().getType() == arme && link.getArme().getDegats() == degats);
 	}
 	
-	@When("^Le personnage jette son arme$")
+	@When("^Le personnage ramasse une nouvelle arme$")
 	public void le_personnage_jette_son_arme() throws Throwable {
-	    link.setArme(new Arme("poing", 1));
+		link.changerArme("lance", 15);
 	}
 	
 	@Then("^Le personnage possede maintenant une  \"([^\"]*)\" a (\\d+) degats$")

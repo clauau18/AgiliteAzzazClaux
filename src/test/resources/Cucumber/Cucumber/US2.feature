@@ -21,7 +21,7 @@ Feature: Changer armer
 	Je veux que mon héros change darme
    Scenario: Changer arme
     Given Le personnage porte une "epee" a 10 degats
-    When Le personnage jette son arme 
+    When Le personnage ramasse une nouvelle arme 
     Then Le personnage possede maintenant une  "lance" a 15 degats
     
  
