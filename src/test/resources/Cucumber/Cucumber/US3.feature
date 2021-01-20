@@ -21,7 +21,7 @@ Feature: Soigner heros
 
 		Scenario pour tester le soin du héros
   	Scenario: Soigner le héros
-    Given Le personnage veut recuperer des points de vie, ses points de vie sont de 5
+    Given Le personnage veut recuperer des points de vie, ses points de vie sont de 95
     When Le personnage se soigne  de 5 points de vie
-    Then Les points de vie du personnage remonte a 10
+    Then Les points de vie du personnage remonte a 100
   

@@ -5,7 +5,7 @@ import cucumber.api.junit.Cucumber;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features="src/test/resources/Cucumber/Cucumber/US2.feature", glue="StepDefUs02ChangerArme.java")
-public class TestRunner_US2 {
+@CucumberOptions(features="src/test/resources/Cucumber/Cucumber")
+public class TestRunner {
 	
 }
