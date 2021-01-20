@@ -13,7 +13,7 @@ public class StepDefs {
 	private Personnage link = new Personnage("link", "epee", 10);
 	
 
-	// Scenario 1 US 1
+	// Scenario 1 US 1 : Je souhaite améliorer mon arme
 	@Given("^On a une arme \"([^\"]*)\" qui inflige (\\d+) de degats$")
 	public void on_a_une_arme_qui_inflige_de_degats(String nom, int degats) throws Throwable {
 		degats = 5; 
@@ -38,7 +38,7 @@ public class StepDefs {
 	}
 	
 
-	//Scenario 2 US 2
+	//Scenario 2 US 2 : Je veux que mon héros change darme
 	@Given("^Le personnage porte une \"([^\"]*)\" a (\\d+) degats$")
 	public void le_personnage_(String arme, int degats) throws Throwable {
 	    arme = "epee";
@@ -60,7 +60,7 @@ public class StepDefs {
 	}
 	
 	
-	// Scenario 3 US3
+	// Scenario 3 US3 : je veux soigner mon héros
 	@Given("^Le personnage veut recuperer des points de vie, ses points de vie sont de (\\d+)$")
 	public void le_personnage_veut_recuperer_des_points_de_vie_ses_points_de_vie_sont_de(int hp) throws Throwable {		hp = 5;
 	    hp = 95;
@@ -72,7 +72,6 @@ public class StepDefs {
 	public void le_personnage_se_soigne_de_points_de_vie(int soin) throws Throwable {
 		soin = 5;
 	    link.soigner(soin);
-	    System.out.println(link.getPointDeVie());
 	}
 
 	@Then("^Les points de vie du personnage remonte a (\\d+)$")

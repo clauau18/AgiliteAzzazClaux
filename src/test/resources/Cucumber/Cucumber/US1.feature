@@ -19,7 +19,7 @@
 
 Feature: Ameliorer arme
  
-  Je veux que toutes mes armes aient une certaine puissance en fontion de leur nom
+ Je souhaite améliorer mon arme
 
   
   Scenario: Amélioration
