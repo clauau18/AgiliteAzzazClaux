@@ -22,7 +22,7 @@ public class PersonnageTest
     @Test
     public void soignerTest()
     {
-        Personnage Link = new Personnage("Link");
+        
         Link.soigner(10);
         assertEquals(110, Link.getPointDeVie());
     }

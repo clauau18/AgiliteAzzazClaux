@@ -31,6 +31,21 @@ public class Personnage {
         
         
     }
+     
+     public void soigner(int pdv)
+     {
+         this.pointDeVie += pdv;
+     }
+     
+     public void subir(int pdv)
+     {
+         this.pointDeVie -= pdv;
+     }
+     
+     public void combattre(Personnage personnage)
+     {
+         personnage.subir(this.arme.getDegats());
+     }
     
      public Arme getArme()
      {
@@ -68,18 +83,5 @@ public class Personnage {
         return "je suis " + this.nom + ", j'ai "+ this.pointDeVie;
     }
     
-    public void soigner(int pdv)
-    {
-        this.pointDeVie += pdv;
-    }
     
-    public void subir(int pdv)
-    {
-        this.pointDeVie -= pdv;
-    }
-    
-    public void combattre(Personnage personnage)
-    {
-        personnage.subir(this.arme.getDegats());
-    }
 }

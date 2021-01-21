@@ -20,10 +20,6 @@ public class CombatTest {
 		combat2 = new Combat(Ganon, Link);
 	}
 
-	@After
-	public void tearDown() throws Exception {
-	}
-
 	@Test
 	public void estCombatFiniTest() {
 		Link.combattre(Ganon);

@@ -14,6 +14,11 @@ public class Arme {
         this.type = type;
         this.degats = degats;
     }
+
+	public void ameliorer(int k) {
+		this.degats += k;
+	}
+    
     
     public int getDegats()
     {
@@ -32,9 +37,5 @@ public class Arme {
 		this.type = type;
 	}
 	
-	public void ameliorer(int k) {
-		this.degats += k;
-	}
-    
     
 }
